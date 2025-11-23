@@ -3,6 +3,11 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'OMYPY App',
   description: '  Spend, save, and stay on top of your finances,all with a focus on your financial security ',
+    viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
   openGraph: {
     images: [
       {
