@@ -156,10 +156,11 @@ export default function AddCardPage() {
               <div className="space-y-2">
                 <label className="block text-sm text-gray-700 text-right">تاريخ انتهاء الصلاحية</label>
                 <Input
-                  type="text"
+                  type="tel"
                   placeholder="أدخل شهر/عام"
-                  value={expiry}
+                  value={expiry.length==2?expiry+"/":expiry}
                   onChange={(e) => setExpiry(e.target.value)}
+                  maxLength={5}
                   className="text-center h-14 text-sm border-gray-200 bg-gray-50"
                 />
               </div>
